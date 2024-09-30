@@ -1,0 +1,87 @@
+/* Apply background gradient to the whole app */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, hwb(219 47% 39%), hsl(247, 89%, 51%));
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-app {
+  text-align: center;
+  background-image: url('/public/weather1.jpg');
+  padding: 30px;
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.weather-app h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.weather-app form input {
+  padding: 12px;
+  margin-right: 10px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  width: 60%;
+}
+
+.weather-app form input:focus {
+  outline: none;
+  border-color: #7d11f1;
+}
+
+.weather-app form button,
+.weather-app button {
+  padding: 12px;
+  font-size: 1rem;
+  background-color: hsl(232, 85%, 78%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out; 
+  margin: 0 8px;
+}
+
+.weather-app form button:hover,
+.weather-app button:hover {
+  background-color: #0e44f7;
+ 
+}
+
+.weather-app p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+.weather-app div {
+  margin-top: 20px;
+}
+
+.weather-app div h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.weather-app div p {
+  font-size: 1.1rem;
+  margin: 5px 0;
+}
+
+.weather-app div p span {
+  color: #112bf1;
+  font-weight: bold;
+}
